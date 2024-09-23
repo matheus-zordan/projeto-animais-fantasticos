@@ -84,11 +84,12 @@ initScrollSuave()
 function initAnimacaoScroll() {
     // Seleciona todos os elementos com a classe 'js-scroll'
     const sections = document.querySelectorAll('.js-scroll')
+    console.log(sections)
 
     // Verifica se há algum elemento selecionado
     if (sections.length) {
         // Calcula 60% da altura da janela do navegador
-        const windowMetade = window.innerHeight * 0.6
+        const windowMetade = window.innerHeight * 0.8
 
         // Define a função que será executada ao rolar a página
         function animaScroll() {
@@ -96,7 +97,7 @@ function initAnimacaoScroll() {
             sections.forEach((section) => {
                 // Obtém a distância do topo da seção em relação ao topo da janela
                 const sectionTop = section.getBoundingClientRect().top
-                // Verifica se a seção está visível na janela (60% da altura)
+                // Verifica se a seção está visível na janela (80% da altura)
                 const isSectionVisible = (sectionTop - windowMetade) < 0
                 // Se a seção estiver visível, adiciona a classe 'ativo'
                 if (isSectionVisible)
