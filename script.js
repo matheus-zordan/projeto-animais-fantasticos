@@ -11,6 +11,7 @@ function initTabNav() {
         // Adiciona a classe 'ativo' à primeira seção
         tabContent[0].classList.add('ativo')
 
+
         // Função que ativa a aba correspondente ao índice fornecido
         function activeTab(index) {
             // Remove a classe 'ativo' de todas as seções
