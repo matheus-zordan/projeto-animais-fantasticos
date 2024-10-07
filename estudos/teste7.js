@@ -1,4 +1,4 @@
-//Constructor Funcions
+//Constructor Functions
 class Carro {
     constructor(marcaAtribuida, precoAtrbuido) {
         this.marca = marcaAtribuida
