@@ -49,7 +49,7 @@ class Dom {
             // Define um método addClass que recebe um parâmetro classe
             elementList.forEach((element) => {
                 // Para cada elemento em elementList
-                element.classList.add('classe')
+                element.classList.add(classe)
                 // Adiciona a classe especificada ao elemento
             })
         }
@@ -67,11 +67,13 @@ class Dom {
 const listaItens = new Dom('li')
 // Cria uma nova instância da classe Dom para todos os elementos <li>
 
+listaItens.addClass("ativar")
+// Chama o método addClass da instância listaItens para adicionar a classe 'ativar' aos elementos <li>
+
 const ul = new Dom('ul')
 // Cria uma nova instância da classe Dom para todos os elementos <ul>
 
-listaItens.addClass("ativar")
-// Chama o método addClass da instância listaItens para adicionar a classe 'ativar' aos elementos <li>
+listaUl.addClass("espaco")
 
 
 
