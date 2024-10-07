@@ -12,4 +12,14 @@ const fiat = new Carro('Fiat', 4000)
 console.log(honda)
 console.log(fiat)
 
+class Carro2 {
+    constructor(marca, precoInicial) {
+        const taxa = 1.2
+        const precoFinal = precoInicial * taxa
+        this.marca = marca
+        this.preco = precoFinal
+    }
+} 
 
+const bmw = new Carro2('bmw', 120000)
+console.log(bmw)
